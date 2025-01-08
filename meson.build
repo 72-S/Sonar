@@ -8,3 +8,8 @@ gtk = dependency('gtk4')
 sonar = executable('sonar', 'src/main.c', 
   dependencies : gtk)
 
+
+run_target('run',
+  command: ['./build/sonar']
+)
+
